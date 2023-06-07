@@ -27,7 +27,7 @@ public class Main{
 					size /= 1024;
 					index++;
 				}
-				System.out.println(f.getName() + "  " + df.format(size) + " " + units[index]);
+				System.out.println(f.getName() + "  \u001B[33m" + df.format(size) + " " + units[index] + "\u001B[0m");
 			}else{
 				System.out.println("\u001B[35m" + f.getName() + "\u001B[0m");
 			}
