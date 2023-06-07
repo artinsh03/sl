@@ -16,8 +16,6 @@ public class Main{
 		DecimalFormat df = new DecimalFormat("##.#");
 
 		byte index = 0;
-		//Print Header
-		System.out.println("\u001B[36m---------- " + path + " ----------\u001B[0m");
 		//Print files information
 		for(File f : files){
 			//Check if object is a file or folder
@@ -35,11 +33,6 @@ public class Main{
 			}
 			index = 0;
 		}
-		//Print Footer
-		System.out.print("\u001B[36m");
-		for(int i = 0 ; i < path.length() + 22 ; i++){
-			System.out.print("-");
-		}
-		System.out.println("\u001B[0m");
+		
 	}
 }
