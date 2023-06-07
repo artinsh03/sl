@@ -5,7 +5,7 @@ execute:
 clean:
 	rm *.class
 install:compile
-	sudo mkdir /opt/sl
+	sudo mkdir -p /opt/sl
 	sudo cp Main.class /opt/sl
 	sudo cp sl /usr/bin
 run:compile execute clean
